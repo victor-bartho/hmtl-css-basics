@@ -6,13 +6,22 @@
     <title>Video Playing</title>
 </head>
 <body>
-    <h1>Locally hosted videos</h1>
+    <h1>Self hosted videos</h1>
     <!--Basic version, however not every browser supports every video format:
     <video src="media/my_video.mp4" width="500" controls></video>
     -->
-    <video controls width="500" poster="img/lemons_poster.png">
+    <video controls width="560" poster="img/lemons_poster.png">
         <source src="media/my_video.mp4" type="video/mp4">
         <source src="media/my_video.m4v" type="video/mp4">
     </video>
+    <h1>Youtube embedded video</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=6TSme9WDtiyC0F5S" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>Vimeo embedded video</h1>
+    <iframe src="https://player.vimeo.com/video/273764697?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+    width="560" height="238" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; 
+    encrypted-media" title="2D Animation Reel"></iframe>
 </body>
 </html>
