@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia on HTML5</title>
+</head>
+<body>
+    <h1>Midias</h1>
+    <h2>Dynamic image with &lt;picture&gt; tag</h2>
+    <p>Try changing browser size. It will adapt according to browser width.</p>
+    <picture>
+        <!--Up to max width, will exhibit image addressed at srcset-->
+        <source media="(max-width: 750px)" srcset="img/small_pic.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/medium_pic.png" type="image/png">
+        <img src="img/big_pic.png" alt="big picture">
+    </picture>
+</body>
+</html>
