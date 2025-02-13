@@ -15,5 +15,13 @@
         <source media="(max-width: 1050px)" srcset="img/medium_pic.png" type="image/png">
         <img src="img/big_pic.png" alt="big picture">
     </picture>
+    <h2>Playing audios</h2>
+    <!-- basic version, however not every browser supports mp3:<audio src="media/happy-mistake.mp3" controls></audio>-->
+    <audio preload="metadata" controls>
+        <!--normally, we add more than an option of media type, and the browser will try to load the first line. If it 
+        can`t (uncompatible browser), will try to load the next <source>. -->
+        <source src="media/happy-mistake.ogg" type="audio/ogg">
+        <source src="media/happy-mistake.mp3" type="audio/mpeg">
+    </audio> 
 </body>
 </html>
