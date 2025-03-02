@@ -1,21 +1,31 @@
 @charset 'UTF-8';
 
 body {
-    background-color: rgb(205, 255, 203);
+    background-color: #d6fde9;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    color: rgb(4, 109, 0);
+    color: #1e402f;
 }
 
-/* in css, # references html "id" */
+/* in css, # references html "id". id is single use. for style replication between tags or elements, use "class"*/
 h1#main{
     text-align: center;
-    background-color: rgb(4, 109, 0);
+    background-color: #3c805e;
     color: white;
 }
 
 h2 {
-    color: rgb(51, 77, 49);
+    color: #3c805e;
+}
+
+/* in css, . references hmtl "class" */
+/* even though we can use id and classes simultaneously, there is a hierarchy: id > class > base */
+.intermediate {
+    color: #80793c;
+}
+
+.advanced {
+    color: #803c3c;
 }
