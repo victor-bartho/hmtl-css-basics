@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+        /* visited should go before hover, otherwise it will overwrite color by being read after */
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        /* pseudo-elements are identified by :: and can style or add content at specific parts of an element, such as 
+            before or after a element/class/identifier */
+        .special::after {
+            content: ' <=';
+        }
+
+        .special::before {
+            content: '=> '; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Customizing links</h1>
+    <ul>
+        <li>
+            <a href="https://github.com/victor-bartho/hmtl-css-basics" target="_blank">GitHub Repo</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/watch?v=y1cBhJLNNXU&list=RDEMZaMBGyZYeRAAyOnZ13lZRw&start_radio=1" 
+                target="_blank" class="special">Youtube Playlist</a>
+        </li>
+        <li>
+            <a href="https://www.vim-hero.com/lessons/moving-with-words" target="_blank">Vim Hero Game</a>
+        </li>
+    </ul>
+</body>
+</html>
